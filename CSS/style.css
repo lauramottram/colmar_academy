@@ -7,7 +7,7 @@ html {
 }
 
 .site-width {
-  width: 100%;
+  width: 960px;
 }
 
 body {
@@ -31,10 +31,16 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: .8rem;
+}
 
+caption {
+  font-size: .5rem;
+}
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-bottom: 1.25rem;
 }
 
@@ -43,7 +49,11 @@ h2 {
 }
 
 h3 {
-  font-size:
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
 }
 
 /* Header Section */
@@ -87,43 +97,42 @@ header {
 .nav-bar {
   justify-content: space-between;
   align-items: center;
-  padding-right: 1rem;
+
   flex-direction:
 }
 
 .nav-bar li {
   list-style-type: none;
   display: inline;
-  padding: 1rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 /* Banner section */
 
 .banner {
   background-color: grey;
-  flex-direction: row;
   border: 1px solid black;
   margin: 64px auto;
+  margin-bottom: 0;
   position: relative;
   top: 0;
 }
 
 .banner-image {
-  width: 60%;
-  height: 650px;
+  width: 537px;
   margin: 2rem 2.5rem 2rem 1.5rem;
 }
 
 .banner img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .banner-content {
   flex-direction: column;
   justify-content: center;
-  width: 28%;
+  width: 423px;
   color: darkgrey;
+  padding-right: 3.5rem;
 }
 
 .banner h2 {
@@ -135,4 +144,62 @@ header {
   background-color: green;
   padding: 8px 0;
   justify-content: center;
+}
+
+/* Info section */
+
+.info-main,
+.info-column,
+.info-content,
+.info-box-content {
+  flex-direction: column;
+}
+
+.info {
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  line-height: 1.4;
+  background-color: white;
+}
+
+.info-main {
+  width: 537px;
+}
+
+.info-image img {
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.info-content h3,
+.info-content p {
+  padding-bottom: 1.5rem;
+}
+
+.info-column {
+  width: 423px;
+}
+
+.info-box-image  {
+
+}
+
+.info-box a {
+  color: blue;
+}
+
+.info-box-content {
+  justify-content: center;
+}
+
+.info-box-content p {
+  padding: .5rem 1rem .5rem 1rem;
+}
+
+.info-box-content h4 {
+  padding: 0 1rem;
+}
+
+.info-box-image img {
+  padding: 1rem;
 }
