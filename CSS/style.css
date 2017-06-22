@@ -1,0 +1,86 @@
+/* Universal Styles */
+
+html {
+  font-family: Helvetica;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.site-width {
+  width: 100%;
+}
+
+}
+
+div {
+  display: block;
+  border: 1px black solid;
+}
+
+
+.container {
+    max-width:
+    margin: 0 auto;
+    display: flex;
+  }
+
+a {
+  color: darkgrey;
+  text-decoration: none;
+}
+
+
+
+h2 {
+
+}
+
+/* Header Section */
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 4rem;
+  margin: auto;
+  border: 1px black solid;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  align-items: center;
+  color: darkgrey;
+  float: left;
+  font-size: 1.25rem;
+}
+.logo img {
+  padding: .75rem .25rem .75rem 1.5rem;
+  height: 3rem;
+  border: 1px black solid;
+}
+
+.colmar {
+  color: darkgrey;
+  font-weight: bold;
+}
+
+.academy {
+  color: lightgrey;
+}
+
+/* Nav-bar */
+
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+  flex-direction:
+}
+
+.nav-bar li {
+  list-style-type: none;
+  display: inline;
+  padding: 1rem;
+  margin-right: 1.5rem;
+}
