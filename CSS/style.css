@@ -10,6 +10,8 @@ html {
   width: 100%;
 }
 
+body {
+  margin: 0;
 }
 
 div {
@@ -31,8 +33,17 @@ a {
 
 
 
-h2 {
+h1 {
+  font-size: 3rem;
+  padding-bottom: 1.25rem;
+}
 
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size:
 }
 
 /* Header Section */
@@ -46,13 +57,15 @@ header {
   border: 1px black solid;
   flex-direction: column;
   align-items: center;
+  top: 0;
+  background-color: PINK;
+  opacity: 1;
 }
 
 .logo {
   align-items: center;
   color: darkgrey;
   float: left;
-  font-size: 1.25rem;
 }
 .logo img {
   padding: .75rem .25rem .75rem 1.5rem;
@@ -83,4 +96,43 @@ header {
   display: inline;
   padding: 1rem;
   margin-right: 1.5rem;
+}
+
+/* Banner section */
+
+.banner {
+  background-color: grey;
+  flex-direction: row;
+  border: 1px solid black;
+  margin: 64px auto;
+  position: relative;
+  top: 0;
+}
+
+.banner-image {
+  width: 60%;
+  height: 650px;
+  margin: 2rem 2.5rem 2rem 1.5rem;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.banner-content {
+  flex-direction: column;
+  justify-content: center;
+  width: 28%;
+  color: darkgrey;
+}
+
+.banner h2 {
+  padding-bottom: 1.25rem;
+}
+
+.banner-box {
+  color: white;
+  background-color: green;
+  padding: 8px 0;
+  justify-content: center;
 }
