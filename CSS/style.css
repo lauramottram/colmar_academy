@@ -19,9 +19,7 @@ div {
   border: 1px black solid;
 }
 
-
 .container {
-    max-width:
     margin: 0 auto;
     display: flex;
   }
@@ -33,10 +31,6 @@ a {
 
 p {
   font-size: .8rem;
-}
-
-caption {
-  font-size: .5rem;
 }
 
 h1 {
@@ -97,8 +91,6 @@ header {
 .nav-bar {
   justify-content: space-between;
   align-items: center;
-
-  flex-direction:
 }
 
 .nav-bar li {
@@ -161,6 +153,7 @@ header {
   margin: auto;
   line-height: 1.4;
   background-color: white;
+  margin-bottom: 0;
 }
 
 .info-main {
@@ -178,10 +171,8 @@ header {
 
 .info-column {
   width: 423px;
-}
-
-.info-box-image  {
-
+  float: right;
+  padding-bottom: 3rem;
 }
 
 .info-box a {
@@ -202,4 +193,55 @@ header {
 
 .info-box-image img {
   padding: 1rem;
+}
+
+.guest-lecture {
+  background-color: grey;
+}
+
+/* Course section */
+
+.course {
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  line-height: 1.4;
+  background-color: grey;
+  text-align: center;
+}
+
+.course h3 {
+  justify-content: center;
+  padding: 2rem;
+}
+
+.course,
+.course-box,
+.course-box-image,
+.course-box-content {
+  flex-direction: column;
+}
+
+.course-info {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.course-box {
+  width: 250px;
+  height: 280px;
+  margin: 0 1rem 1rem 1rem;
+  text-align: left;
+  background-color: white;
+}
+
+.course-box img {
+  height: 128px;
+  width: 250px;
+}
+
+.course-box-content p,
+.course-box-content h4 {
+  padding: .5rem 0 0 1rem;
 }
