@@ -171,7 +171,6 @@ header {
 
 .info-column {
   width: 423px;
-  float: right;
   padding-bottom: 3rem;
 }
 
@@ -244,4 +243,73 @@ header {
 .course-box-content p,
 .course-box-content h4 {
   padding: .5rem 0 0 1rem;
+}
+
+/* Thesis section */
+
+.thesis {
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  line-height: 1.4;
+  background-color: white;
+  text-align: left;
+}
+
+.thesis,
+.video-column,
+.video,
+.video-info,
+.fisma-column,
+.design-content,
+.now-content {
+  flex-direction: column;
+}
+
+.thesis h3 {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.thesis h4 {
+  padding: 0 0 1rem 1.5rem;
+}
+
+.thesis p {
+  padding: 0 0 1.5rem 1.5rem;;
+}
+
+video {
+  width: 490px;
+  padding: 0 1rem 1.5rem 1.5rem;
+}
+
+.video-column {
+  align-items: center;
+  align-content: flex-start;
+}
+
+.fisma-column {
+  width: 423px;
+}
+
+.now,
+.design {
+  width: 423px;
+  height: 168px;
+}
+
+.design {
+  background-color: grey;
+}
+
+.design-image,
+.now-image {
+  padding: 1rem;
+}
+
+.design-content,
+.now-content {
+  justify-content: center;
+  padding-right: 4rem;
 }
