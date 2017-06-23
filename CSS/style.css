@@ -313,3 +313,36 @@ video {
   justify-content: center;
   padding-right: 4rem;
 }
+
+/* Footer */
+
+footer {
+  position: relative;
+  margin: auto;
+  line-height: 1.4;
+  background-color: white;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin: 0;
+  padding: .8rem 0 2.5rem 1.5rem;
+}
+
+.terms p {
+  display: inline;
+  margin-right: 1rem;
+
+}
+.terms p,
+.copyright p {
+font-size: .6rem;
+}
+
+
+.terms {
+  justify-content: space-between;
+  padding: .8rem 0 2.5rem 1.5rem;
+  margin-right: 0;
+}
