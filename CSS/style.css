@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html {
-  font-family: Helvetica;
+  font-family: "Merriweather", "Helvetica", san-serif;
   font-size: 16px;
   line-height: 1.4;
 }
@@ -16,7 +16,6 @@ body {
 
 div {
   display: block;
-  border: 1px black solid;
 }
 
 .container {
@@ -25,29 +24,54 @@ div {
   }
 
 a {
-  color: darkgrey;
+  color: #5A646B;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
   font-size: .8rem;
+  font-family: "Open Sans","Helvetica", san-serif;
+  line-height: 1.5;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   padding-bottom: 1.25rem;
+  color: white;
+  font-family: "Merriweather", "Helvetica", san-serif;
 }
 
 h2 {
   font-size: 1.25rem;
+  font-family: "Open Sans", "Helvetica", san-serif;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-family: "Merriweather", "Helvetica", san-serif;
+  color: #5A646B;
 }
 
 h4 {
+  font-size: 1.4rem;
+  font-family: "Merriweather", "Helvetica", san-serif;
+  color: #5A646B;
+}
+
+h5 {
   font-size: 1.5rem;
+  font-family: "Open Sans", "Helvetica", san-serif;
+}
+
+.design-content h4,
+.course h3,
+.guest-lecture h4,
+.guest-lecture p a  {
+  color: white;
 }
 
 /* Header Section */
@@ -58,11 +82,10 @@ header {
   width: 100%;
   height: 4rem;
   margin: auto;
-  border: 1px black solid;
   flex-direction: column;
   align-items: center;
   top: 0;
-  background-color: PINK;
+  background-color: white;
   opacity: 1;
 }
 
@@ -70,20 +93,20 @@ header {
   align-items: center;
   color: darkgrey;
   float: left;
+  margin-left: 0;
 }
 .logo img {
   padding: .75rem .25rem .75rem 1.5rem;
   height: 3rem;
-  border: 1px black solid;
 }
 
 .colmar {
-  color: darkgrey;
+  color: black;
   font-weight: bold;
 }
 
 .academy {
-  color: lightgrey;
+  color: #5A646B;
 }
 
 /* Nav-bar */
@@ -97,45 +120,50 @@ header {
   list-style-type: none;
   display: inline;
   margin-right: 1rem;
+  color: #5A646B;
 }
 
 /* Banner section */
 
 .banner {
-  background-color: grey;
-  border: 1px solid black;
-  margin: 64px auto;
-  margin-bottom: 0;
+  background-color: #293352;
+  margin: 64px auto 0 auto;
   position: relative;
-  top: 0;
+}
+
+.banner-left {
+  width: 537px;
+  flex-direction: column;
+  margin: 0;
 }
 
 .banner-image {
-  width: 537px;
+  width: 473px;
   margin: 2rem 2.5rem 2rem 1.5rem;
-}
-
-.banner img {
-  width: 100%;
 }
 
 .banner-content {
   flex-direction: column;
   justify-content: center;
-  width: 423px;
+  width: 290px;
   color: darkgrey;
   padding-right: 3.5rem;
+  margin-left: 0;
 }
 
 .banner h2 {
   padding-bottom: 1.25rem;
+  color: white;
 }
 
 .banner-box {
   color: white;
-  background-color: green;
-  padding: 8px 0;
+  font-weight: bold;
+  background-color: #99CDFF;
+  padding: 8px;
   justify-content: center;
+  width: 250px;
+  margin-left: 0;
 }
 
 /* Info section */
@@ -150,7 +178,6 @@ header {
 .info {
   justify-content: center;
   position: relative;
-  margin: auto;
   line-height: 1.4;
   background-color: white;
   margin-bottom: 0;
@@ -158,10 +185,15 @@ header {
 
 .info-main {
   width: 537px;
+  margin-left: 0;
 }
 
 .info-image img {
   padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.info-image {
+  margin-left: 0;
 }
 
 .info-content h3,
@@ -174,8 +206,20 @@ header {
   padding-bottom: 3rem;
 }
 
+.caption {
+  font-style: italic;
+}
+
+.info-box {
+  margin-left: 0;
+}
+
 .info-box a {
-  color: blue;
+  color: #5A646B;
+}
+
+.info-box a:visited {
+  color: #2BA1FF;
 }
 
 .info-box-content {
@@ -195,7 +239,8 @@ header {
 }
 
 .guest-lecture {
-  background-color: grey;
+  background-color: #666699;
+  color: white;
 }
 
 /* Course section */
@@ -205,7 +250,7 @@ header {
   position: relative;
   margin: auto;
   line-height: 1.4;
-  background-color: grey;
+  background-color: #336633;
   text-align: center;
 }
 
@@ -233,6 +278,7 @@ header {
   margin: 0 1rem 1rem 1rem;
   text-align: left;
   background-color: white;
+  padding-bottom: 1.25rem;
 }
 
 .course-box img {
@@ -242,7 +288,7 @@ header {
 
 .course-box-content p,
 .course-box-content h4 {
-  padding: .5rem 0 0 1rem;
+  padding: .5rem 1rem 0 1rem;
 }
 
 /* Thesis section */
@@ -297,10 +343,12 @@ video {
 .design {
   width: 423px;
   height: 168px;
+  margin-left: 0;
 }
 
 .design {
-  background-color: grey;
+  background-color: #666699;
+  color: white;
 }
 
 .design-image,
@@ -312,6 +360,8 @@ video {
 .now-content {
   justify-content: center;
   padding-right: 4rem;
+  padding-top: 1.5rem;
+
 }
 
 /* Footer */
@@ -323,6 +373,7 @@ footer {
   background-color: white;
   text-align: left;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .copyright {
@@ -337,7 +388,7 @@ footer {
 }
 .terms p,
 .copyright p {
-font-size: .6rem;
+font-size: .8rem;
 }
 
 
