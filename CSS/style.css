@@ -7,7 +7,7 @@ html {
 }
 
 .site-width {
-  width: 960px;
+  width: 100%;
 }
 
 body {
@@ -74,6 +74,15 @@ h5 {
   color: white;
 }
 
+.column-left {
+  position: relative;
+}
+
+.column-right {
+  width: 60%;
+  position: relative;
+}
+
 /* Header Section */
 
 header {
@@ -131,24 +140,23 @@ header {
   position: relative;
 }
 
-.banner-left {
-  width: 537px;
-  flex-direction: column;
-  margin: 0;
+.banner-main {
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  width: 60%;
 }
 
-.banner-image {
-  width: 473px;
-  margin: 2rem 2.5rem 2rem 1.5rem;
+.banner-main img {
+  width: 100%;
+  height: auto;
 }
 
 .banner-content {
   flex-direction: column;
   justify-content: center;
-  width: 290px;
   color: darkgrey;
   padding-right: 3.5rem;
   margin-left: 0;
+  width: auto;
 }
 
 .banner h2 {
@@ -160,9 +168,9 @@ header {
   color: white;
   font-weight: bold;
   background-color: #99CDFF;
-  padding: 8px;
+  padding: .5rem;
   justify-content: center;
-  width: 250px;
+  width: 80%;
   margin-left: 0;
 }
 
@@ -184,26 +192,27 @@ header {
 }
 
 .info-main {
-  width: 537px;
-  margin-left: 0;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  width: 60%;
 }
 
-.info-image img {
-  padding: 2rem 1.5rem 2rem 1.5rem;
-}
-
-.info-image {
-  margin-left: 0;
+.info-main img {
+  width: 100%;
+  height: auto;
 }
 
 .info-content h3,
 .info-content p {
   padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .info-column {
-  width: 423px;
   padding-bottom: 3rem;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-left: 0;
+  width: auto;
 }
 
 .caption {
@@ -224,6 +233,7 @@ header {
 
 .info-box-content {
   justify-content: center;
+  width: 100%;
 }
 
 .info-box-content p {
@@ -234,13 +244,20 @@ header {
   padding: 0 1rem;
 }
 
-.info-box-image img {
+.info-box img {
   padding: 1rem;
+  width: 35%;
+  height: 35%;
 }
 
 .guest-lecture {
   background-color: #666699;
   color: white;
+}
+
+.orientation.info-box img {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Course section */
@@ -322,28 +339,37 @@ header {
 }
 
 .thesis p {
-  padding: 0 0 1.5rem 1.5rem;;
+  padding: 0 0 0 1.5rem;;
 }
 
+.video {
+  width: 60%;
+  margin: 0 1rem 1.5rem 1.5rem;
+}
 video {
-  width: 490px;
-  padding: 0 1rem 1.5rem 1.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.video-info {
+  padding-top: 1.5rem;
 }
 
 .video-column {
   align-items: center;
-  align-content: flex-start;
 }
 
 .fisma-column {
   width: 423px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .now,
 .design {
-  width: 423px;
-  height: 168px;
   margin-left: 0;
+  height: 168px;
+  padding: 1rem;
 }
 
 .design {
@@ -351,17 +377,15 @@ video {
   color: white;
 }
 
-.design-image,
-.now-image {
-  padding: 1rem;
+.design img,
+.now img {
+  width: auto%;
+  height: 81%;
 }
 
 .design-content,
 .now-content {
   justify-content: center;
-  padding-right: 4rem;
-  padding-top: 1.5rem;
-
 }
 
 /* Footer */
