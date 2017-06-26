@@ -141,22 +141,24 @@ header {
 }
 
 .banner-main {
-  margin: 2rem 1.5rem 2rem 1.5rem;
+  padding: 2rem 0 2rem 1.5rem;
   width: 60%;
+  height: auto;
+  margin-right: 1rem;
 }
 
 .banner-main img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 .banner-content {
   flex-direction: column;
   justify-content: center;
-  color: darkgrey;
-  padding-right: 3.5rem;
+  padding-left: 1REM;
   margin-left: 0;
-  width: auto;
+  width: 40%;
 }
 
 .banner h2 {
@@ -170,7 +172,7 @@ header {
   background-color: #99CDFF;
   padding: .5rem;
   justify-content: center;
-  width: 80%;
+  width: 70%;
   margin-left: 0;
 }
 
@@ -201,6 +203,10 @@ header {
   height: auto;
 }
 
+.info h3 {
+  padding-top: 1.5rem;
+}
+
 .info-content h3,
 .info-content p {
   padding-bottom: 1.5rem;
@@ -212,7 +218,7 @@ header {
   margin-top: 2rem;
   margin-left: 0;
   padding-left: 0;
-  width: auto;
+  width: 40%;
 }
 
 .caption {
@@ -221,6 +227,7 @@ header {
 
 .info-box {
   margin-left: 0;
+  width: 100%;
 }
 
 .info-box a {
@@ -255,6 +262,10 @@ header {
   color: white;
 }
 
+.guest-lecture h4 {
+  padding-top: 1rem;
+}
+
 .orientation.info-box img {
   margin-top: 0;
   padding-top: 0;
@@ -287,25 +298,36 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 2rem;
+
 }
 
 .course-box {
-  width: 250px;
-  height: 280px;
+  width: 25%;
+  height: auto;
   margin: 0 1rem 1rem 1rem;
   text-align: left;
   background-color: white;
   padding-bottom: 1.25rem;
+  padding-left: 0;
 }
 
 .course-box img {
-  height: 128px;
-  width: 250px;
+  height: auto%;
+  width: 100%;
+}
+
+.course-box-content {
+  margin-left: 0;
+  overflow: auto;
+  padding-right: 1rem;
 }
 
 .course-box-content p,
 .course-box-content h4 {
   padding: .5rem 1rem 0 1rem;
+  margin: 0;
+  width: 100%;
+
 }
 
 /* Thesis section */
@@ -360,7 +382,7 @@ video {
 }
 
 .fisma-column {
-  width: 423px;
+  width: 40%;
   margin-left: 0;
   padding-left: 0;
 }
@@ -369,7 +391,8 @@ video {
 .design {
   margin-left: 0;
   height: 168px;
-  padding: 1rem;
+  width: 100%;
+
 }
 
 .design {
@@ -381,11 +404,18 @@ video {
 .now img {
   width: auto%;
   height: 81%;
+  padding: 1rem;
 }
 
 .design-content,
 .now-content {
+  margin-left: 0;
   justify-content: center;
+}
+
+.design-content h4,
+.now-content h4 {
+  padding-top: 1rem;
 }
 
 /* Footer */
