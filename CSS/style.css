@@ -166,6 +166,7 @@ header {
   flex-direction: column;
   justify-content: center;
   padding-left: 1REM;
+  padding-right: 1rem;
   margin-left: 0;
   width: 40%;
 }
@@ -653,4 +654,16 @@ width: 90%;
 
 .copyright {
   margin: 1rem;
+}
+
+}
+
+/* Media query - desktop minimum 1024px */
+
+@media only screen and (min-width: 1024px) {
+
+.site-width {
+  width: 960px;
+}
+
 }
