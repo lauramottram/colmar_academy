@@ -76,10 +76,18 @@ h5 {
 .design-content h4,
 .course h3,
 .guest-lecture h4,
-.guest-lecture p a  {
+.guest-lecture p a,
+.banner a,
+.design-content a  {
   color: white;
+  font-weight: normal;
 }
 
+
+ {
+  color: white;
+
+}
 .column-left {
   position: relative;
 }
@@ -175,6 +183,8 @@ header {
   padding-bottom: 1.25rem;
   color: white;
 }
+
+
 
 .banner-box {
   color: white;
@@ -471,9 +481,9 @@ font-size: .8rem;
 }
 
 
-/* Media query - mobile max-width 480px */
+/* Media query - mobile max-width 768px */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 
 /* Header section - mobile */
 
